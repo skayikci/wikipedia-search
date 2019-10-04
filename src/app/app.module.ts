@@ -3,6 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {
+  HttpClientJsonpModule,
+  HttpClientModule
+} from "@angular/common/http";
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -10,9 +15,16 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ }
